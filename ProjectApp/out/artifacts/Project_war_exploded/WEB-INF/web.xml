@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>customerSearchRoom</servlet-name>
+        <servlet-class>servlet.CustomerSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerSearchRoom</servlet-name>
+        <url-pattern>/searchRoom</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>customBookRoom</servlet-name>
+        <servlet-class>servlet.CustomerBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customBookRoom</servlet-name>
+        <url-pattern>/bookRoom</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employeeAccessRoom</servlet-name>
+        <servlet-class>servlet.EmployeeAccessToRoomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeAccessRoom</servlet-name>
+        <url-pattern>/accessRoom</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employeeFindRoom</servlet-name>
+        <servlet-class>servlet.EmployeeFindRoomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeFindRoom</servlet-name>
+        <url-pattern>/findRoom</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employeeTransformRoomWithBook</servlet-name>
+        <servlet-class>servlet.EmployeeTransWithBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeTransformRoomWithBook</servlet-name>
+        <url-pattern>/transformRoomWithBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employeeTransformRoomWithoutBook</servlet-name>
+        <servlet-class>servlet.EmployeeTransWithoutBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeTransformRoomWithoutBook</servlet-name>
+        <url-pattern>/transformRoomWithoutBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employeeInsertPayment</servlet-name>
+        <servlet-class>servlet.EmployeeInsertPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeInsertPayment</servlet-name>
+        <url-pattern>/insertPayment</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
